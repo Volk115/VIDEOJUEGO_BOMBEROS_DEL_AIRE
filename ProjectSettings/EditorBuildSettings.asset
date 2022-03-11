@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/POR_DEFECTO/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/OTDB/MENU.unity
+    path: Assets/VIDEOJUEGO/MENU.unity
     guid: 242c4e3d46a7b7946a270e337f689e78
   - enabled: 0
     path: 
@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/OTDB/VIDEOJUEGO.unity
+    path: Assets/VIDEOJUEGO/VIDEOJUEGO.unity
     guid: b8b745b64f3ea7647935864b109c67a9
   - enabled: 1
-    path: Assets/OTDB/DERROTA.unity
+    path: Assets/VIDEOJUEGO/DERROTA.unity
     guid: 135113d5c587089449d5a746f864d71b
   m_configObjects: {}
