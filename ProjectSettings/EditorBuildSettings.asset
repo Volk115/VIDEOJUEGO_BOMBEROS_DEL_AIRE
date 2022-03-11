@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/POR_DEFECTO/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/OTDB/DERROTA.unity
-    guid: e21abb1ba285786408b039959f930fbf
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/OTDB/VIDEOJUEGO.unity
     guid: b8b745b64f3ea7647935864b109c67a9
+  - enabled: 1
+    path: Assets/OTDB/DERROTA.unity
+    guid: 135113d5c587089449d5a746f864d71b
   m_configObjects: {}

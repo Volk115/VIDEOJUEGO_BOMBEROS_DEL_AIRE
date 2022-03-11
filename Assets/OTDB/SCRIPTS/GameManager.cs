@@ -7,8 +7,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //VALORES DE DRACO Y FUEGO
-    public int FUEGO_COUNT = 0;
-    public int DRACO_COUNT = 0;
+    public float DRACO_COUNT;
+    public float FUEGO_COUNT;
+
     private float timerCount = 5.0f;
     public GameObject canvasText;
 
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         TEXTO_DRACO.text = $"X{DRACO_COUNT}";
         TEXTO_FUEGO.text = $"X{FUEGO_COUNT}";
     }
+
     //CONTADOR DE DRACOS Y FUEGOS
     void Start()
     {

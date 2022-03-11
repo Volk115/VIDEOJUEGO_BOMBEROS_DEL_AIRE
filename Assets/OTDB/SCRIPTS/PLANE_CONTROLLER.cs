@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PLANE_CONTROLLER : MonoBehaviour
 {
+    private GameManager GMScript;
     //VELOCIDAD LINEAL
     public float speed = 50;
 
@@ -45,6 +46,9 @@ public class PLANE_CONTROLLER : MonoBehaviour
     {
         if (otherCollider.gameObject.CompareTag("SUELO")|| otherCollider.gameObject.CompareTag("DRACO"))
         {
+            PERSISTENCE_DATA.sharedInstance.DRACO_COUNT_PD = GMScript.DRACO_COUNT;
+            PERSISTENCE_DATA.sharedInstance.FUEGO_COUNT_PD = GMScript.FUEGO_COUNT;
+
             gameOver = true;
             Destroy(gameObject);
             Debug.Log("PRUEBA");
@@ -55,6 +59,7 @@ public class PLANE_CONTROLLER : MonoBehaviour
     //APARECE EN LA POSICION:
     void Start()
     {
+        GMScript = FindObjectOfType<GameManager>();
         playerAudioSource = GetComponent<AudioSource>();
         transform.position = new Vector3(330, 160, 0);
     }

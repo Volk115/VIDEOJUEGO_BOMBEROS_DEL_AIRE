@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FOLLOR_RUTE : MonoBehaviour
+public class FOLLOW_RUTE : MonoBehaviour
 {
     private GameManager GmScript;
 
@@ -18,7 +18,7 @@ public class FOLLOR_RUTE : MonoBehaviour
     void Start()
     {
         GmScript = FindObjectOfType<GameManager>();
-
+        
         transform.position = PuntosDeRuta[0].position;
         TotalPoints = PuntosDeRuta.Length;
         DestinoActual = 1;

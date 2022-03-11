@@ -45,9 +45,13 @@ public class DETECT_COLISIONS : MonoBehaviour
             }
             
         }
-       
+        
         //SE DESTRUIRA EL OBJETO
         Destroy(gameObject);
+
+        //SE REPRODUCE UN SOLIDO AL IMPACTAR
+
+
     }
 
     //EL JUGADOR SE DESTRUIRA SI PIERDE
