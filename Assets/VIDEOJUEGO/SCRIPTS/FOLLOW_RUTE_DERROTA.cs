@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FOLLOW_RUTE_DERROTA : MonoBehaviour
 {
-    private GameManager GmScript;
-
     //PUNTOS DE RUTA A SEGUIR
     public Transform[] PuntosDeRuta;
     public int TotalPoints;
@@ -18,6 +16,7 @@ public class FOLLOW_RUTE_DERROTA : MonoBehaviour
     void Start()
     {
         transform.position = PuntosDeRuta[0].position;
+        TotalPoints = PuntosDeRuta.Length;
         DestinoActual = 1;
         transform.LookAt(PuntosDeRuta[DestinoActual].position);
     }
@@ -36,11 +35,5 @@ public class FOLLOW_RUTE_DERROTA : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position, PuntosDeRuta[DestinoActual].position, Speed * Time.deltaTime);
-    }
-
-    private void OnDestroy()
-    {
-        Debug.Log("11");
-        GmScript.DRACO_COUNT--;
     }
 }
