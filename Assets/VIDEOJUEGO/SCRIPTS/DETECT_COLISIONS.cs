@@ -43,15 +43,10 @@ public class DETECT_COLISIONS : MonoBehaviour
             {
                 Instantiate(AGUA, transform.position, gameObject.transform.rotation);
             }
-            
         }
         
         //SE DESTRUIRA EL OBJETO
         Destroy(gameObject);
-
-        //SE REPRODUCE UN SOLIDO AL IMPACTAR
-
-
     }
 
     //EL JUGADOR SE DESTRUIRA SI PIERDE

@@ -44,7 +44,7 @@ public class PLANE_CONTROLLER : MonoBehaviour
     //SI COLISIONA, MUERE
     void OnCollisionEnter(Collision otherCollider)
     {
-        if (otherCollider.gameObject.CompareTag("SUELO")|| otherCollider.gameObject.CompareTag("DRACO"))
+        if (otherCollider.gameObject.CompareTag("SUELO")|| otherCollider.gameObject.CompareTag("DRACO")|| otherCollider.gameObject.CompareTag("FUEGO"))
         {
             PERSISTENCE_DATA.sharedInstance.DRACO_COUNT_PD = GMScript.DRACO_COUNT;
             PERSISTENCE_DATA.sharedInstance.FUEGO_COUNT_PD = GMScript.FUEGO_COUNT;
